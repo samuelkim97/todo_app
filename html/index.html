@@ -8,28 +8,39 @@
     <title>Todo App</title>
 </head>
 <body>
-    <div>
-        <div id="clock-container">
-            <h1 id="clock">00:00</h1><span id="seconds">:00</span>
+    <div id="container">
+        <div id="clock-container" class="items">
+            <h1 id="clock">00:00</h1><h1 id="seconds">:00</h1>
         </div>
-        <div id="input-container">
-            <form>
-                <input type="text">
-                <button type="submit"></button>
+        
+        <div id="input-container" class="items">
+            <form id="input-box">
+                <input id="input-form" type="text" placeholder="Enter your name" required>
+                <button id="submit-button" type="submit">Log In</button>
             </form>
+            <h2 id="greeting" class="hidden"></h2>
         </div>
-        <div id="to-do-container">
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div id="weather-container">
+        <div id="weather-container" class="items">
             <p>weather</p>
+        </div>
+        <nav id="nav" class="items">
+            <a href="">Day</a>
+            <a href="">Week</a>
+            <a href="">Month</a>
+            <a href="">Year</a>
+        </nav>
+        <div id="slider">
+            <div id="to-do-container" class="items">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
     </div>
     
     <script src="../js/clock.js"></script>
     <script src="../js/background.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>
