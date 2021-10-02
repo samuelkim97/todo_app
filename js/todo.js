@@ -24,6 +24,7 @@ function createTodo(newTodoObj) {
   span.innerText = newTodoObj.text;
 
   const button = document.createElement("button");
+  button.id = "delete-button";
   button.innerText = "Delete";
   button.addEventListener("click", deleteTodo);
 
