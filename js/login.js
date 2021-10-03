@@ -24,7 +24,7 @@ function createGreeting() {
 }
 
 if (usrName === null) {
-  submitBtn.addEventListener("submit", saveUsrName);
+  inputBox.addEventListener("submit", saveUsrName);
 } else {
   hideInputShowGreeting();
   createGreeting();
