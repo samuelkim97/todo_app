@@ -6,7 +6,6 @@ const images = [
   "image4.jpg",
   "image5.jpg",
 ];
-// const body = document.querySelector("body");
 
 function changeRandomImg() {
   const randomNum = parseInt(Math.random() * images.length);

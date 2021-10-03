@@ -4,19 +4,22 @@ const submitBtn = document.getElementById("submit-button");
 
 const greeting = document.getElementById("greeting");
 
-let usrName = localStorage.getItem("usrname");
+const USRNAME_KEY = "usrname";
+const HIDDEN_KEY = "hidden";
+
+let usrName = localStorage.getItem(USRNAME_KEY);
 
 function saveUsrName(event) {
   event.preventDefault();
-  localStorage.setItem("usrname", inputForm.value);
+  localStorage.setItem(USRNAME_KEY, inputForm.value);
   usrName = inputForm.value;
   hideInputShowGreeting();
   createGreeting();
 }
 
 function hideInputShowGreeting() {
-  inputBox.classList.add("hidden");
-  greeting.classList.remove("hidden");
+  inputBox.classList.add(HIDDEN_KEY);
+  greeting.classList.remove(HIDDEN_KEY);
 }
 
 function createGreeting() {
