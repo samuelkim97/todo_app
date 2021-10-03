@@ -8,7 +8,6 @@ const weekForm = document.getElementById("todo-form2");
 const monthForm = document.getElementById("todo-form3");
 const yearForm = document.getElementById("todo-form4");
 
-const HIDDEN_KEY = "hidden";
 const UNDERLINE_KEY = "underline";
 
 function moveToDay() {
