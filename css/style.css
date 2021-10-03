@@ -84,16 +84,12 @@ a:active {
   width: 240vmin;
   height: 100%;
   left: 0px;
-
-  position: relative;
-  overflow: hidden;
-
-  transition: left 0.5s;
 }
 
 #to-do-container {
   height: 100%;
 
+  overflow: hidden;
   display: flex;
   flex-direction: row;
 }
@@ -117,7 +113,7 @@ a:active {
   /* text-align: center; */
 }
 
-#todo-list {
+.todo-list-class {
   text-align: start;
   margin-right: 10%;
 
@@ -131,4 +127,34 @@ a:active {
 
 .hidden {
   display: none;
+}
+
+.dwmy-btn {
+  height: 30px;
+}
+
+.submit-btn {
+  width: 70px;
+  height: 25px;
+  border-radius: 10%;
+  text-transform: uppercase;
+
+  color: white;
+  background: rgb(150, 110, 0);
+  border: none;
+
+  transition: all 1s linear;
+}
+
+.dwmy-btn:hover,
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: rgb(186, 137, 0);
+}
+
+.underline {
+  border-bottom: 5px solid rgb(186, 137, 0);
 }

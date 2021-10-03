@@ -26,27 +26,32 @@
             <span></span>
         </div>
         <nav id="nav" class="items">
-            <a href="" id="day-btn">Day</a>
-            <a href="" id="week-btn">Week</a>
-            <a href="" id="month-btn">Month</a>
-            <a href="" id="year-btn">Year</a>
+            <a id="day-btn" class="dwmy-btn underline">Day</a>
+            <a id="week-btn" class="dwmy-btn">Week</a>
+            <a id="month-btn" class="dwmy-btn">Month</a>
+            <a id="year-btn" class="dwmy-btn">Year</a>
         </nav>
         <div id="slider">
             <div id="to-do-container" class="items">
                 <form id="todo-form" class="todo-form">
                     <input id="todo-input" type="text" placeholder="To Do List" required />
-                    <button type="submit">Add</button>
-                    <ul id="todo-list"></ul>
+                    <button class="submit-btn" type="submit">Add</button>
+                    <ul id="todo-list" class="todo-list-class"></ul>
                 </form>
-                <form id="todo-form2" class="todo-form">
+                <form id="todo-form2" class="todo-form hidden">
                     <input id="todo-input2" type="text" placeholder="To Do List" required />
-                    <button type="submit">Add</button>
-                    <ul id="todo-list2"></ul>
+                    <button class="submit-btn" type="submit">Add</button>
+                    <ul id="todo-list2" class="todo-list-class"></ul>
                 </form>
-                <form id="todo-form3" class="todo-form">
+                <form id="todo-form3" class="todo-form hidden">
                     <input id="todo-input3" type="text" placeholder="To Do List" required />
-                    <button type="submit">Add</button>
-                    <ul id="todo-list3"></ul>
+                    <button class="submit-btn" type="submit">Add</button>
+                    <ul id="todo-list3" class="todo-list-class"></ul>
+                </form>
+                <form id="todo-form4" class="todo-form hidden">
+                    <input id="todo-input4" type="text" placeholder="To Do List" required />
+                    <button  class="submit-btn"type="submit">Add</button>
+                    <ul id="todo-list4" class="todo-list-class"></ul>
                 </form>
             </div>
         </div>
@@ -58,6 +63,7 @@
     <script src="../js/todo.js"></script>
     <script src="../js/todo2.js"></script>
     <script src="../js/todo3.js"></script>
+    <script src="../js/todo4.js"></script>
     <script src="../js/weather.js"></script>
     <script src="../js/slider.js"></script>
 </body>
