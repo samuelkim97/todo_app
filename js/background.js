@@ -10,7 +10,7 @@ const images = [
 
 function changeRandomImg() {
   const randomNum = parseInt(Math.random() * images.length);
-  document.body.style.backgroundImage = `url("../img/image${randomNum}.jpg")`;
+  document.body.style.backgroundImage = `url("img/image${randomNum}.jpg")`;
 }
 
 changeRandomImg();
